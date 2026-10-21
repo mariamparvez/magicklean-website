@@ -1,0 +1,6 @@
+import fs from 'node:fs/promises';
+const photos=['1540555700478-4be289fbecef','1703792686658-24e62d626ed2','1607860108855-64acf2078ed9','1576765607924-bab09a126c7d','1611892440504-42a792e24d32','1445019980597-93fa8acb246c','1544161515-4ab6ce6db874','1438032005730-c779502df39b','1517466787929-bc90951d0974','1604654894610-df63bc536371','1581578731548-c64695cc6952','1516734212186-a967f81ad0d7','1414235077428-338989a2e8c0','1503454537195-1dcabb73ffb9','1576091160399-112ba8d25d1d','1534438327276-14e5300c3a48'];
+const sources=photos.map((id,i)=>i===3?'https://www.ak-kurier.de/akkurier/www/upload/ki_pflegeA02.jpg':`https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=480&h=520&q=85`);
+const results=await Promise.allSettled(sources.map(async(url,i)=>{const response=await fetch(url,{signal:AbortSignal.timeout(45000)});if(!response.ok)throw new Error(`Photo ${i}: HTTP ${response.status}`);const bytes=Buffer.from(await response.arrayBuffer());await fs.writeFile(`dist/assets/business-${i}.jpg`,bytes);return {image:i,bytes:bytes.length}}));
+results.forEach((r,i)=>console.log(r.status==='fulfilled'?JSON.stringify(r.value):`${i}: ${r.reason}`));if(results.some(r=>r.status==='rejected'))process.exitCode=1;
+await fs.writeFile('image-sources.json',JSON.stringify(sources.map((source,i)=>({file:`business-${i}.jpg`,source})),null,2));
