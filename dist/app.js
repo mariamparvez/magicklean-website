@@ -27,3 +27,7 @@ form.onsubmit=e=>{e.preventDefault();if(!form.reportValidity())return;const requ
 const processObserver=new IntersectionObserver(entries=>{if(entries[0].isIntersecting){entries[0].target.classList.add("is-visible");processObserver.disconnect()}},{threshold:.15});processObserver.observe(document.querySelector(".how"));
 
 document.querySelector("#business-quote").onclick=()=>openEnquiry("Commercial Laundry — Business Quote");
+
+const exploreBusinesses=document.querySelector('#explore-businesses'),allBusinesses=document.querySelector('#businesses-all');
+originalCards.forEach(source=>{const tile=source.cloneNode(true);tile.classList.add('business-tile');tile.querySelector('button').onclick=()=>openEnquiry(tile.querySelector('h3').textContent);allBusinesses.append(tile)});
+exploreBusinesses.onclick=()=>{const expanded=exploreBusinesses.getAttribute('aria-expanded')!=='true';exploreBusinesses.setAttribute('aria-expanded',String(expanded));exploreBusinesses.innerHTML=expanded?'Back to Carousel <span aria-hidden="true">↔</span>':'Explore All Businesses <span aria-hidden="true">↗</span>';allBusinesses.hidden=!expanded;industryWindow.hidden=expanded;document.querySelector('.carousel-note').hidden=expanded;['#industry-prev','#industry-play','#industry-next'].forEach(selector=>document.querySelector(selector).hidden=expanded);if(expanded)stopAutoplay()};
