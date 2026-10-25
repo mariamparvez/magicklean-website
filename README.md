@@ -9,11 +9,12 @@ A responsive laundry and dry-cleaning sample website built with HTML, CSS and va
 ## Features
 
 - Nine image-based laundry service cards with enquiry actions
-- Sixteen commercial business cards with continuous scrolling, play/pause and left/right controls
+- Six grouped business categories with continuous scrolling, play/pause, arrows and an expandable category grid
 - Animated process cards with hover effects and reduced-motion support
-- Pricing comparison with a highlighted everyday laundry plan
+- Clear sample pricing by month, kilogram and garment
 - A custom AI-generated linen banner and SVG icons
 - Responsive mobile navigation and sample booking/enquiry dialogs
+- A framed grey-blue design, serif headings and a split hero using the supplied laundry photograph
 
 ## Preview locally
 
@@ -37,7 +38,7 @@ git subtree push --prefix dist origin gh-pages
 
 ## Sample interactions
 
-This is a demonstration website. Booking requests save in the visitor's browser only. Enquiry forms do not send messages, and the WhatsApp button demonstrates the experience without a connected business number. Prices and testimonials reproduce the supplied design.
+This is a demonstration website. Booking drafts save in the visitor's browser only. Enquiry forms do not send messages, and the WhatsApp button demonstrates the experience without a connected business number. Prices are illustrative and need business confirmation. Sample testimonials have been removed. Real reviews, turnaround times, coverage and live booking integration are deferred until confirmed details are supplied.
 
 ## Imagery
 
