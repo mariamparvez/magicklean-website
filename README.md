@@ -4,6 +4,8 @@
 
 A responsive laundry and dry-cleaning sample website built with HTML, CSS and vanilla JavaScript.
 
+[View five editable logo concepts](https://mariamparvez.github.io/magicklean-website/logo-concepts.html)
+
 ## Features
 
 - Nine image-based laundry service cards with enquiry actions
