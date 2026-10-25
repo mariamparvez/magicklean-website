@@ -1,6 +1,6 @@
 # MagicKlean Website
 
-[**Open the live website →**](https://mariamparvez.github.io/magicklean-website/)
+[**Open the live website →**](https://mariamparvez.github.io/magicklean-website/?v=c56475ce)
 
 A responsive laundry and dry-cleaning sample website built with HTML, CSS and vanilla JavaScript.
 
