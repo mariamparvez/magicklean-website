@@ -1,6 +1,6 @@
 # MagicKlean Website
 
-[**Open the live website →**](https://mariamparvez.github.io/magicklean-website/?v=c56475ce)
+[**Open the live website →**](https://mariamparvez.github.io/magicklean-website/)
 
 A responsive laundry and dry-cleaning sample website built with HTML, CSS and vanilla JavaScript.
 
@@ -11,10 +11,12 @@ A responsive laundry and dry-cleaning sample website built with HTML, CSS and va
 - Nine image-based laundry service cards with enquiry actions
 - Six grouped business categories with continuous scrolling, play/pause, arrows and an expandable category grid
 - Animated process cards with hover effects and reduced-motion support
-- Clear sample pricing by month, kilogram and garment
-- A custom AI-generated linen banner and SVG icons
+- Four published starting rates, with per-shirt, per-kilogram and per-item units
+- Meaningful garment-care photography and custom SVG illustrations
 - Responsive mobile navigation and sample booking/enquiry dialogs
-- A framed grey-blue design, serif headings and a split hero using the supplied laundry photograph
+- A warm modern design, large editorial typography, a photographic hero and custom animated SVG garment-care graphics
+- A branded loader, lazy-loaded images, scroll reveals, reduced-motion support and visible animation pause controls
+- Published office details, selectable branch maps, directions, phone/email links and attributed testimonial excerpts
 
 ## Preview locally
 
@@ -38,7 +40,7 @@ git subtree push --prefix dist origin gh-pages
 
 ## Sample interactions
 
-This is a demonstration website. Booking drafts save in the visitor's browser only. Enquiry forms do not send messages, and the WhatsApp button demonstrates the experience without a connected business number. Prices are illustrative and need business confirmation. Sample testimonials have been removed. Real reviews, turnaround times, coverage and live booking integration are deferred until confirmed details are supplied.
+Booking is available through links to MagicKlean's official order page and phone number. An optional demo form saves drafts in the visitor's browser only; enquiry previews do not send messages. WhatsApp remains unconnected pending approval. Prices, branch details, opening hours and testimonial excerpts are sourced from MagicKlean's website and linked for context; confirm final prices, service coverage and availability with the business. See `SOURCE-NOTES.md`.
 
 ## Imagery
 
