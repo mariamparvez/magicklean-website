@@ -1,5 +1,7 @@
 # MagicKlean Website
 
+[**Open the live website →**](https://mariamparvez.github.io/magicklean-website/)
+
 A responsive laundry and dry-cleaning sample website built with HTML, CSS and vanilla JavaScript.
 
 ## Features
@@ -24,6 +26,12 @@ Open http://127.0.0.1:4174 in your browser.
 ## Deployment
 
 Serve the `dist/` directory with any static website host. The entry point is `dist/index.html`; all images and icons are included in `dist/assets/`.
+
+GitHub Pages publishes the `gh-pages` branch. To publish an updated `dist/` folder after committing your changes:
+
+```sh
+git subtree push --prefix dist origin gh-pages
+```
 
 ## Sample interactions
 
